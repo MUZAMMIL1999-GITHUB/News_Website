@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <h1>Daily News</h1>
+                <ul>
+                    <li onclick="navClick('politics')" id="politics">Politic's</li>
+                    <li onclick="navClick('sports')" id="sports">Sports</li>
+                    <li onclick="navClick('technology')" id="technology">Technology</li>
+                </ul>
+            </div>
+            <div class="search-area">
+                <input type="text" placeholder="Search News" id="search-input">
+                <div>
+                    <button id="search-btn">Search</button>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="search-title">
+        <h3>Search: <span class="s-title"></span></h3>
+    </div>
+    <div class="news-container">
+
+    </div>
+    <section id="footer">
+        <p>&#169Copywrite | All Rights Reserved 2024-2025</p>
+    </section>
+
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
