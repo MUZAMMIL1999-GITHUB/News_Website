@@ -10,7 +10,7 @@ const searchInput = document.getElementById("search-input")
 const searchBtn = document.getElementById("search-btn")
 const searchTitle = document.querySelector(".s-title")
 
-const fetchData = async(input, india) => {
+const fetchData = async(input) => {
 
     let res = await fetch(`https://newsapi.org/v2/everything?q=${input}&apikey=${key}`)
     let data = await res.json()
@@ -19,7 +19,7 @@ const fetchData = async(input, india) => {
     displayData(data)
 }
 
-function displayData(data, input) {
+function displayData(data) {
     console.log(data.articles)
     
     newsContainer.textContent = ""
